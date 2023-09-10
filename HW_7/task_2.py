@@ -1,0 +1,16 @@
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+
+new_dict = {key: stock[key] * prices[key] for key in stock if key in prices}
+sum_shmekeley = sum(new_dict.values())
+print(sum_shmekeley)
